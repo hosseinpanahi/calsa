@@ -1,0 +1,30 @@
+{
+  "name": "calsa",
+  "version": "1.0.0",
+  "homepage": "https://github.com/hosseinpanahi/calsa",
+  "authors": [
+    "Milad <hosseinpanahi@live.com>"
+  ],
+  "description": "Solar date to Gregorian date converter and vice versa",
+  "main": ["calsa.js", "calsa.min.js", "calsa.min.js.map"],
+  "keywords": [
+    ["Date",
+    "DateTime",
+    "date",
+    "converter",
+    "soalr",
+    "hijri",
+    "hejri",
+    "shamsi"]
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+	"sample",
+	"Readme.md",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
