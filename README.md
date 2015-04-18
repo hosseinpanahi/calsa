@@ -23,3 +23,10 @@ bower install calsa
 install-package Calsa
 
 ####download calsa repo from GitHub
+
+converted.year :> Year
+converted.month :> Month
+converted.day :> Day
+converted.isLeapYear :> Is a leap year
+converted.dayInWeek :> Day of the week
+converted.originalDate :> Passed date to be converted
