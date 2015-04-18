@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Date Converter</title>
+	<link href="content/style.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>Date Converter version 1.0.0</h1>
+	<div class="sample">
+	<h2>How to use</h2>
+		<ol>
+			<li>
+				<p>
+				    Add link to calsa javascript file
+				    <br />
+                    &lt;script src="scripts/libs/calsa.min.js"&gt;&lt;/script&gt;
+				</p>
+			</li>
+			<li>
+				<p>Create a new instance of calsa.gregorianToSolarHijri and then use it!</p>
+				<div class="code">
+					<p>var year = document.getElementById("year").value;</p>
+					<p>var month = document.getElementById("month").value;</p>
+					<p>var day = document.getElementById("day").value;</p>
+					<br/>
+					<strong><p>var converted = new calsa.gregorianToSolarHijri(year, month, day);</p></strong>
+					<strong>DONE!</strong>
+					<hr />
+					<p>converted.year :> Year</p>
+					<p>converted.month :> Month</p>
+					<p>converted.day :> Day</p>
+					<p>converted.isLeapYear :> Is a leap year</p>
+					<p>converted.dayInWeek :> Day of the week</p>
+					<p>converted.originalDate :> Passed date to be converted</p>
+				</div>
+			</li>
+		</ol>					
+	</div>
+	<div class="content">
+		<form role="form" id="convertForm">
+			<fieldset>
+				<header class="help-block">
+					Gregorian Date To Solar Hijri Date
+				</header>
+				<div>
+					<div class="form-div">
+						<label for="year">Year: </label>
+						<input min="1" max="2500" value="1989" type="number" id="year" />
+					</div>
+				</div>
+				<div>
+					<div class="form-div">
+						<label for="month">Month: </label>
+						<input min="1" max="12" value="10" type="number" id="month" />
+					</div>
+				</div>
+				<div>
+					<div class="form-div">
+						<label for="day">Day: </label>
+						<input min="1" max="31" value="6" type="number" id="day" />
+					</div>
+				</div>
+				<br />
+				<button id="convert" onclick="run(); return false;">
+					Convert
+				</button>
+			</fieldset>
+		</form>
+		<div class="converted-container">
+			<p class="h3 text-primary">Converted Date</p>
+			<div class="text-info" id="converted">
+				no data!
+			</div>
+		</div>
+		<div class="converted-back-container">
+			<p class="h3 text-primary">Converted Back Date</p>
+			<div class="text-info" id="convertedBack">
+				no data!
+			</div>
+		</div>
+	</div>
+	<script src="scripts/libs/calsa.min.js"></script>
+    <script src="Scripts/app.js"></script>
+</body>
+</html>
