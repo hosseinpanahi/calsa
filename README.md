@@ -1,6 +1,10 @@
 # calsa
 Calsa is a javascript small library to convert Solar Hijri Dates to Gregorian Dates and the other way around.
 
+#####Super lightweight less than 5kb (min version)
+#####No jquery dependency
+
+
 ##How to use calsa
 
 #####1. Add link to calsa javascript file 
