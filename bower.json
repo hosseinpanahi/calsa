@@ -8,20 +8,20 @@
   "description": "Solar date to Gregorian date converter and vice versa",
   "main": ["calsa.js", "calsa.min.js", "calsa.min.js.map"],
   "keywords": [
-    ["Date",
+    "Date",
     "DateTime",
     "date",
     "converter",
     "soalr",
     "hijri",
     "hejri",
-    "shamsi"]
+    "shamsi"
   ],
   "license": "MIT",
   "ignore": [
     "**/.*",
-	"sample",
-	"Readme.md",
+    "sample",
+    "Readme.md",
     "node_modules",
     "bower_components",
     "test",
